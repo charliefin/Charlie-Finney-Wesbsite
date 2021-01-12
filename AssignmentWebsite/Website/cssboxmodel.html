@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Box Model Page</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="mainassets.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    #explanation {
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 300px;
+        padding: 20px;
+        margin: 10px;
+        float: left;
+    }
+
+    #explanation2 {
+        background-color: rgb(224, 81, 81);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 300px;
+        padding: 20px;
+        margin: 10px;
+        float: left;
+    }
+
+    #explanation3 {
+        background-color: skyblue;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 2.5%;
+        width: 300px;
+        padding: 20px;
+        margin: 10px;
+        float: left;
+    }
+
+    #explanation4 {
+        background-color: royalblue;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 3%;
+        width: 300px;
+        padding: 20px;
+        margin: 10px;
+        height: 186px;
+        float: left;
+    }
+
+    #boxes {
+        text-align: center;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a.title {
+        float: left;
+        color: rgb(255, 255, 255);
+        border-radius: 10%;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+</style>
+</head>
+<body>
+
+    <ul class="menu">
+        <li class="menubox" style="background-color: rgb(18, 163, 95);"><a href="mainpage.html">Charlie's Website</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">CSS</a>
+          <div class="dropdown-content">
+            <a href="methods.html">Methods</a>
+            <a href="implementations.html">Implementation Styles</a>
+            <a href="cssboxmodel.html">CSS Box Model</a>
+          </div>
+        </li>
+        <li class="menubox"><a href="references.html">References</a></li>
+    </ul>   
+
+    <div class="row">
+        <div class="col-2">
+            <ul class="verticalmenu">
+                <li class="verticalbox"><a onclick="window.location.href='mailto:420884@edu.cwa.ac.uk'">Email Me</a></li>
+                <li class="verticalbox"><a href="https://www.youtube.com/watch?v=d1YBv2mWll0&ab_channel=Sordiway">Support</a></li>
+                <li class="verticalbox"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">QnA</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6" style="border-left: 1px solid #ddd; border-right: 1px solid #ddd;">
+
+            <h5>Welcome to the mainpage</h5>
+            <h1>CSS box model</h1>
+            <p>Below are a few examples of a CSS box model. A CSS box model is a box that wraps around each HTML element that is present.</p>
+        
+            <div id="boxes">
+                <div id = "explanation">
+                  <p>In this CSS box model, I have used multiple elements. The main elements include the background colour, width, padding, and margin. We of course also include 
+                      the content in the box.
+                  </p>
+                </div>
+        
+                <div id = "explanation2">
+                    <p>In order to have the boxes alligned side by side, I used the element float. When added to the div classes, I set the float elements to left, alligning the two 
+                        boxes to the left of each other. 
+                    </p>
+                </div>
+        
+                <div id = "explanation3">
+                    <p> For each of the boxes, I have set the width to 300px, the padding to 20px, and the margin to 10px. Furthermore, I decided to make use out of box shadows,
+                        adding a drop shadow.
+                    </p>
+                </div>
+        
+                <div id = "explanation4">
+                    <p> Each CSS box present has a different element changed about it. One has its background colour changed, and another has its corner radius changed to name a few.</p>
+                </div>
+            </div>
+        
+            <p>Below is a diagram displaying what the CSS box model looks like:</p>
+
+            <img src="cssboxmodel.png" alt="CSS Box Model Diagram" width="737" height="397">  
+        
+            <p>In the diagram, we can see that it renders each element as a rectangular box. The CSS box model determines its size, position, and properties. Its basic properties are as follows:</p>
+            <ul>
+                <li><b>Content</b> - The content that is present inside of the box</li>
+                <li><b>Padding</b> - The empty area between the content and the edge of the box</li>
+                <li><b>Border</b> - A border that surrounds the padding and content</li>
+                <li><b>Margin</b> - The empty area outside of the border</li>
+            </ul>
+        
+            <p>Along with these, you can change the colour of the box, its background and so on.</p>
+        
+            <p>The content of the box contains data such as text, images, or videos. The content cannot go beyond the padding, so it stays wrapped in the center. The content portion can have
+                a background image or a different background colour, as shown at the beginning of the page. 
+            </p>
+        
+            <p>The paddings edge extends the content area of the box, including the elements padding. The paddings dimensions can be increased and decreased by the "padding" property. This is what wraps around it.
+                Following this, the padding is extended by the border edge, which includes the elements border. We can change the borders thickness, with the main property of this being "border
+                -width".
+            </p>
+        
+            <p>Lastly, the margins edge extends the border area. The margin is used for seperating the element from other elements that may be near or next to it. You can change the margin by
+                the "margin" property. </p>
+        
+            <p>Below are all the properties which I used for my CSS boxes:</p>
+                
+            <img src="cssboxproperties.png" alt="CSS Box Model Code" width="405" height="183">
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Charlie Finney - 2021</p>
+        <p>420884@edu.cwa.ac.uk</p>
+        <p>Ext. Diploma in Computing L3</p>
+    </div>
+</body>
+</html>

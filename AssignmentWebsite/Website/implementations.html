@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Implementations Page</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="mainassets.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <ul class="menu">
+        <li class="menubox" style="background-color: rgb(18, 163, 95);"><a href="mainpage.html">Charlie's Website</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">CSS</a>
+          <div class="dropdown-content">
+            <a href="methods.html">Methods</a>
+            <a href="implementations.html">Implementation Styles</a>
+            <a href="cssboxmodel.html">CSS Box Model</a>
+          </div>
+        </li>
+        <li class="menubox"><a href="references.html">References</a></li>
+    </ul>   
+
+    <div class="row">
+        <div class="col-2">
+          <ul class="verticalmenu">
+            <li class="verticalbox"><a onclick="window.location.href='mailto:420884@edu.cwa.ac.uk'">Email Me</a></li>
+            <li class="verticalbox"><a href="https://www.youtube.com/watch?v=d1YBv2mWll0&ab_channel=Sordiway">Support</a></li>
+            <li class="verticalbox"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">QnA</a></li>
+        </ul>
+        </div>
+
+        <div class="col-6" style="border-left: 1px solid #ddd; border-right: 1px solid #ddd;">
+
+            <h5>Implementation used on the Website</h5>
+            <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Implementation Styles</h1>
+            <p>On this page, I will be going through some of the implementation styles that I have used on this site, and the reasons for them. These will include Inline, Embedded &
+              External implementation styles. 
+            </p>
+
+            <h2>Inline</h2>
+            <p>As explained on the previous webpage, the inline style implementation requires adding the style attribute to your chosen HTML element. This adds a unique style to just
+              that element. This is certainly useful for wanting only certain things to have a unique style, or if you dont have access to .css files. Lets take a quick look at its advantages
+              and disadvantages when compared to the other implementations...
+            </p>
+
+            <h3>Advantages</h3>
+            <ul>
+              <li><b>Quickly insert CSS rules</b> - This implementation style allows you to easily insert CSS rules to HTML elements quickly. This can be very useful for testing changes, and
+              making quick performance fixes. </li>
+              <li><b>No need for creating documents</b> - You do not need to create and link a document for the styles to take affect. External implementations on the other hand do.</li>
+            </ul>
+
+            <h3>Disadvantages</h3>
+            <p>With advantages, it comes its disadvantages. Here are some disadvantages about inline...</p>
+            <ul>
+              <li><b>Becomes tedious and time consuming</b> - Adding styles tags to every HTML element can become very time consuming. The structure of your page may become messy and 
+              difficult to read and navigate through.</li>
+              <li><b>Can slow download times</b> - The more elements you style, the slower download times become. It also negatively effects the page size, increasing it.</li>
+            </ul>
+
+            <h2>Embedded</h2>
+            <p>The embedded style implementation involves adding the "style" tag in the "head" tag. This implementation method is very useful for styling a page, as you can add multiple 
+              styles under the "style" tag related to the page. A problem with this though is that it can also be very time consuming when applying these styles to all pages, as it requires
+              you to copy the styles over again and again with each page. Heres its advantages and disadvantages... 
+            </p>
+
+            <h3>Advantages</h3>
+            <ul>
+              <li><b>ID selectors</b> - With this implementation, you are able to make use of ID selectors. This allows the user to select a specific unique element. This is done
+              by adding a hash (#) character, followed by the id of the element.</li>
+              <li><b>Won't need multiple files</b> - As this will be under the same HTML file, you won't have to add multiple files.</li>
+            </ul>
+
+            <h3>Disadvantages</h3>
+            <ul>
+              <li><b>Slow down page loading times</b> - The more styles you add, the slower the page's loading times get. It will also effect the page size, increasing it.</li>
+            </ul>
+
+            <h2>External</h2>
+            <p>The External style implementation involves linking a .css file to the HTML page. This means that the user can add the page styling to one file, and link it across all the 
+              pages that will use the styles. This is very efficient for larger websites that have multiple pages. Its very efficient due to making one change the the .css file, it can apply
+              the changes to all pages across the website. Here are some advantages and disadvantages...
+            </p>
+
+            <h3>Advantages</h3>
+            <ul>
+              <li><b>Cleaner structure</b> - As all the page styling is contained on one seperate file, it saves lots of repeated HTML and CSS across all pages, tidying the structure, and
+              decreasing page size.</li>
+              <li><b>Using the same file</b> - You do not need to use multiple .css files. You can just make use of one across all pages.</li>
+            </ul>
+
+            <h3>Disadvantages</h3>
+            <ul>
+              <li><b>Rendering pages</b> - The pages may take longer to fully render as they have to wait for the .css file to load.</li>
+              <li><b>Using multiple .css files</b> - The more .css files you use, the higher download times will increase.</li>
+            </ul>
+
+            <h3>Conclusion</h3>
+            <p>In my opinion, I find both External and Embedded the most useful. They both work together, with External saving lots of space and giving a cleaner structure, and embedded
+              giving easy to read accessibility to the style of the page. I think that inline implementations will hardly be used unless you want a very specific HTML element needing
+            a different style to the rest. I have only made use out of this a couple of times, whereas ive seen much more use in External and Embedded implementations.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+      <p>Charlie Finney - 2021</p>
+      <p>420884@edu.cwa.ac.uk</p>
+      <p>Ext. Diploma in Computing L3</p>
+    </div>
+</body>
+</html>

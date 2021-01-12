@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Methods Page</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="mainassets.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    div.internalimg {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 222px;
+    }
+
+    div.internalimg2 {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 450px;
+    }
+    
+    div.desc {
+        padding: 15px;
+        text-align: center;;
+    }
+
+    div.animation {
+        width: 150px;
+        height: 100px;
+        background-color: aqua;
+        animation-name: animation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+        border-radius: 2.5%;
+        margin: 20px;
+    }
+
+    @keyframes animation {
+        0% {background-color: aqua; right: 150px; top: 0;}
+        25% {background-color: aquamarine; left: 150px; top: 0;}
+        50% {background-color: cadetblue; right: 150px; top: 0;}
+        80% {background-color: darkblue; left: 150px; top: 0;}
+        100% {background-color:aqua; right: 150px; top: 0;}
+    }
+
+    #internalimgs {
+        text-align: center;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.externalimg {
+        margin: 5px;
+        border:1px solid #ccc;
+        float: left;
+        width: 242px;
+    }
+
+    div.externalimg2 {
+        margin: 5px;
+        border:1px solid #ccc;
+        float: left;
+        width: 427px;
+    }
+
+    #externalimgs {
+        text-align: center;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+</style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menubox" style="background-color: rgb(18, 163, 95);"><a href="mainpage.html">Charlie's Website</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">CSS</a>
+          <div class="dropdown-content">
+            <a href="methods.html">Methods</a>
+            <a href="implementations.html">Implementation Styles</a>
+            <a href="cssboxmodel.html">CSS Box Model</a>
+          </div>
+        </li>
+        <li class="menubox"><a href="references.html">References</a></li>
+    </ul>   
+
+    <div class="row">
+        <div class="col-2">
+            <ul class="verticalmenu">
+                <li class="verticalbox"><a onclick="window.location.href='mailto:420884@edu.cwa.ac.uk'">Email Me</a></li>
+                <li class="verticalbox"><a href="https://www.youtube.com/watch?v=d1YBv2mWll0&ab_channel=Sordiway">Support</a></li>
+                <li class="verticalbox"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">QnA</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6" style="border-left: 1px solid #ddd; border-right: 1px solid #ddd;">
+
+            <h5>Introduction to Methods</h5>
+            <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">CSS Methods</h1>
+            <p>There are three main methods that are used for CSS. These are:</p>
+            <ul>
+                <li>External</li>
+                <li>Internal</li>
+                <li>Inline</li>
+            </ul>
+        
+            <p>Each method takes a slightly different approach into displaying CSS elements. We will be looking at each method, and showing the difference between them and their roles.</p>
+        
+            <h2>Inline CSS</h2>
+            <p>The inline method is used for adding unique styles to different elements. It is done by applying the "style" attribute to the chosen HTML element that you want to style. For example,
+                within this webpage, I have given a part of the layout a grey thin border. Here is how I did it below using the "style" attribute:
+            </p>
+        
+            <p style="font-family: 'Courier New', Courier, monospace; color: red;">&lt;div class="col-6" style="border-left: 1px solid #ddd; border-right: 1px solid #ddd;"&gt;</p>
+        
+            <p>The inline approach is very useful for giving seperate elements like headers and boxes unique styles, giving them a new set of rules to follow.</p>
+        
+            <h2>Internal CSS</h2>
+            <p>The internal method is used for styling one single page. It allows for giving a page a unique style from the rest, instead of giving a unique style to one element. This is
+                done by adding the "style" tag in the "head" tag of your HTML page. Here is how I have styled one page using the "style" tag:
+            </p>
+        
+            <div id="internalimgs">
+                <div class="internalimg">
+                    <a target="_blank" href="internalcodesnippet1.png">
+                        <img src="internalcodesnippet1.png" alt="Internal Code Snippet" width="222" height="441">
+                    </a>
+                    <div class="desc">First screenshot shows the navigation bar style added inside the style tag</div>
+                </div>
+            
+                <div class="internalimg2">
+                    <a target="_blank" href="internalcodesnippet2.png">
+                        <img src="internalcodesnippet2.png" alt="Second Internal Code Snippet" width="450" height="186">
+                    </a>
+                    <div class="desc">Second snippet shows the navigation bar being called in the body tag</div>
+                </div>
+            </div>
+        
+            <p>Internal CSS is quite useful, but can become very time consuming when adding styles for every page. One great addition to internal CSS is that you can use class and ID selectors
+                in the style sheets. For example, instead of using .class, you can instead use #methodName. This is very useful for devlopers, as its easier to know where each part of the 
+                website is stored.
+            </p>
+        
+            <h2>External CSS</h2>
+            <p>The external method is used to change the style of an entire webpage by linking an external page. This is done by using the "link" attribute inside the "head" tag of your HTML page.
+                Inside of the link attribute, a .css file has to be added in order for it to link all of the styles inside onto the webpage. 
+                Here is my .css style file that I have used to link accross all of my webpages:
+            </p>
+        
+            <div id="externalimgs">
+                <div class="externalimg">
+                    <a target="_blank" href="externalcodesnippet1.png">
+                        <img src="externalcodesnippet1.png" alt="External Code Snippet" width="242" height="429" class="center">
+                    </a>
+                    <div class="desc">First screenshot shows the .css file containing the navigation bar style</div>
+                </div>
+            
+                <div class="externalimg2">
+                    <a target="_blank" href="externalcodesnippet2.png">
+                        <div class="externalcodesnippet2">
+                            <img src="externalcodesnippet2.png" alt="Second External Code Snippet" width="427" height="104" class="center">
+                        </div>
+                    </a>
+                    <div class="desc">Second snippet shows the .css file being externally linked in the head tag</div>
+                </div>
+            </div>
+        
+            <p>As you can see in the screenshots above, I have added the navigation bar and font styles in the .css file, and linked them accross every webpage. This saves a lot of code 
+                accross the webpages, saving lots of developing time. Its very efficient, and largely benefits bigger websites that use heavy amounts of styling accross webpages. Once you've
+                edited and changed one .css file, you change all other webpages that are linked to it. 
+            </p>
+        </div>
+
+        <div class="col-4">
+            <h5>Useful information</h5>
+            <h1>What is CSS?</h1>
+            <p>CSS (Cascading Style Sheets) is a markup language that is responsible for the looks of webpages. CSS allows you to change colours, fonts, layers and layouts, as well as adding
+                animations and transitions to a website. These can be added to images, as well as buttons and loaders. Without CSS, webpages would look plain and boring. 
+            </p>
+            <p>An example of this is animations. Here is an animation I can create on the webpage using CSS...</p>
+            <div class="animation" style="float: left;"></div>
+            <div class="animation" style="float: left;"></div>
+            <div class="animation" style="float: left;"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Charlie Finney - 2021</p>
+        <p>420884@edu.cwa.ac.uk</p>
+        <p>Ext. Diploma in Computing L3</p>
+    </div>
+
+</body>
+</html>
